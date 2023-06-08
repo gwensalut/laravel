@@ -7,6 +7,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +37,6 @@ Route::get('/contacts', [ContactsController::class,'index'])->name('contacts');
 
 
 Route::post('/contacts/submit', [ContactsController::class,'submit'])->name('contacts.submit');
+
+Route::get('/login', [AuthController::class,'index'])->name('login');
+Route::post('/login', [AuthController::class,'login'])->name('login.submit');

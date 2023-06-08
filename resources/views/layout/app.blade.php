@@ -15,6 +15,7 @@
             <a href="{{ route('events')}}">EVENTS</a>
             <a href="{{ route('news')}}">NEWS</a>
             <a href="{{ route('contacts')}}">CONTACTS</a>
+            <a href="{{ route('login')}}">LOG IN</a>
         </nav>
     </header>
     @yield('content')
