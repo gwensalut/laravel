@@ -19,4 +19,7 @@ class AuthController extends Controller
             return redirect()->back()->withErrors(['message'=>'Invalid username or password']);
         }
     }
+    public function logout(){
+        Auth::logout();
+    }
 }

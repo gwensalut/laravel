@@ -40,3 +40,5 @@ Route::post('/contacts/submit', [ContactsController::class,'submit'])->name('con
 
 Route::get('/login', [AuthController::class,'index'])->name('login');
 Route::post('/login', [AuthController::class,'login'])->name('login.submit');
+
+Route::get('/logout', [AuthController::class,'logout'])->name('logout');
